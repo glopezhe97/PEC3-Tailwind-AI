@@ -9,6 +9,7 @@
 /**
  * Write any other JavaScript below
  */
+import "../styles/main.scss";
 
 +( function() {
   const university = "UOC";

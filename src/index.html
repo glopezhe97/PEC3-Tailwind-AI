@@ -4,24 +4,88 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
-    <link rel="stylesheet" type="text/css" href="./assets/styles/main.scss"><!-- do not remove this line! -->
+    <!-- <link rel="stylesheet" type="text/css" href="./assets/styles/main.scss">do not remove this line! -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <!-- <style>
+      @import url('https://fonts.googleapis.com/css2?family=National+Park:wght@200..800&family=Noto+Serif:wght@200&family=Roboto:ital,wght@0,100..900;1,100..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+      </style> -->
+
     <title>UOC Boilerplate</title>
   </head>
-  <body>
-    <div class="uoc-container">
-      <picture>
-        <source srcset="./assets/images/logo.png?as=webp&width=350" type="image/webp" />
-        <img src="./assets/images/logo.png?width=350" alt="Universitat Oberta de Catalunya" class="uoc-logo" />
-      </picture>
-      <h1 class="uoc-title">Hello, UOC!</h1>
-      <p>
-        This is a starter template for the Advanced HTML and CSS Tools courses
-        from the Master's Program in Multimedia Applications and the Master's
-        Program in Web App and Website Development at the Universitat Oberta de
-        Catalunya.
-      </p>
-    </div>
+  <body class="">
+    <header class="flex shrink-0 w-full justify-between	items-center bg-bg-dark mb-2.5 p-2.5 text-white">
+      <div class="w-20	"> <img src="./assets/images/logotipo.png" alt=""></div>
+
+        <nav class="">
+          <ul class="">
+            <li><a href="#" class="hover:font-bold">Participantes</a></li>
+            <!-- <li><a href="./jornadas.html" class="skinLinksHeaderIndex">Jornada</a></li>
+            <li><a href="./contacto.html" class="skinLinksHeaderIndex">Contacto</a></li> -->
+          </ul>
+        </nav>
+      </header>
+
+    <main class="globalSizeContainer">
+      <section class="participants-section">
+        <h1>Participantes <i class="fa-regular fa-user fa-bounce"></i></h1>  
+        <div class="participants-grid">
+                <div class="card participant-card" style="width: 18rem;">
+            <img src="./assets/images/participante.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Jordi Ginesta</h5>
+              <p class="card-text">Especialista en economia circular</p>
+              <a href="#" class="btn btn-primary">Ver perfil...</a>
+            </div>
+          </div>
+
+          <div class="card participant-card" style="width: 18rem;">
+            <img src="./assets/images/participant2.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Joan Gómez</h5>
+              <p class="card-text">Enginyer ambiental</p>
+              <a href="#" class="btn btn-primary">Ver perfil...</a>
+            </div>
+          </div>
+
+          <div class="card participant-card" style="width: 18rem;">
+            <img src="./assets/images/participant3.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Laia Roca</h5>
+              <p class="card-text">Activista ecològica</p>
+              <a href="#" class="btn btn-primary">Ver perfil...</a>
+            </div>
+          </div>
+
+          <div class="card participant-card" style="width: 18rem;">
+            <img src="./assets/images/participant4.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Ramona Sató</h5>
+              <p class="card-text">Arquitecta bioclimàtica</p>
+              <a href="#" class="btn btn-primary">Ver perfil...</a>
+            </div>
+          </div>
+          
+          <div class="card participant-card" style="width: 18rem;">
+            <img src="./assets/images/participant5.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Francesc Auguets</h5>
+              <p class="card-text">Arquitecte bioclimàtic</p>
+              <a href="#" class="btn btn-primary">Ver perfil...</a>
+            </div>
+          </div>
+
+          <div class="card participant-card" style="width: 18rem;">
+            <img src="./assets/images/participant6.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">David Font</h5>
+              <p class="card-text">Educador ambiental</p>
+              <a href="#" class="btn btn-primary">Ver perfil...</a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
     <include src="./views/footer.html"></include>
-    <script type="module" src="./assets/scripts/main.js"></script><!-- do not remove this line! -->
+    <script type="module" src="./assets/scripts/main.js"></script>
   </body>
 </html>
