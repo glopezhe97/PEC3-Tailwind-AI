@@ -25,6 +25,16 @@
 // @import "@some-company/some-node-module";
 
 /**
+ * Import elements
+ */
+@import "elements/links";
+
+/**
+ * Import components
+ */
+ @import "components/cards";
+
+/**
  * Import layouts
  * It's a best practice to use a different partial for each page
  */
