@@ -1,4 +1,4 @@
 /*#SECTION: Links footer using apply*/
 .link-footer {
-    @apply text-white p-2.5 hover:text-[#0d6efd] hover:underline;
+    @apply text-white p-2.5 hover:text-[#0d6efd] hover:underline text-xs sm:text-sm md:text-base;
 }
